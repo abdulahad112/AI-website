@@ -1,0 +1,176 @@
+<!-- Main HTML File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #3498db, #2ecc71);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .card {
+            transition: transform 0.5s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .card-text {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AI Tools Showcase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="image-gen.html">AI Image Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icon-gen.html">Icon Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pdf-gen.html">PDF Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video-gen.html">Video Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bg-gen.html">Background Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bg-removal.html">Background Removal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news-mockup.html">Mockup News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="display-3 fw-bold mb-4">Welcome to the AI Tools Showcase</h1>
+                <p class="lead mb-5">Explore a variety of AI-driven tools for your creative needs.</p>
+                <button class="btn btn-secondary btn-lg" onclick="window.scrollTo(0, 500)">Discover More</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- AI Image Generation Section -->
+            <section id="imageGen" class="col-md-4 mb-5">
+                <div class="card border border-primary shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">AI Image Generation</h2>
+                    <p class="card-text text-center">Generate images by providing descriptive text.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('image-gen.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Icon Generation Section -->
+            <section id="iconGen" class="col-md-4 mb-5">
+                <div class="card border border-secondary shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">Icon Generation</h2>
+                    <p class="card-text text-center">Create icons based on your inputs.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('icon-gen.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PDF Generation Section -->
+            <section id="pdfGen" class="col-md-4 mb-5">
+                <div class="card border border-success shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">PDF Generation</h 2>
+                    <p class="card-text text-center">Generate PDFs from content or templates.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('pdf-gen.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Generation Section -->
+            <section id="videoGen" class="col-md-4 mb-5">
+                <div class="card border border-info shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">Video Generation</h2>
+                    <p class="card-text text-center">Create videos using text, images, or animations.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('video-gen.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Background Generation Section -->
+            <section id="bgGen" class="col-md-4 mb-5">
+                <div class="card border border-warning shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">Background Generation</h2>
+                    <p class="card-text text-center">Generate creative backgrounds from inputs.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('bg-gen.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Background Removal Section -->
+            <section id="bgRemoval" class="col-md-4 mb-5">
+                <div class="card border border-danger shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">Background Removal</h2>
+                    <p class="card-text text-center">Remove backgrounds from uploaded images.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('bg-removal.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mockup News Section -->
+            <section id="newsMockup" class="col-md-4 mb-5">
+                <div class="card border border-dark shadow p-3 mb-5 bg-body rounded">
+                    <h2 class="card-title text-center">Mockup News</h2>
+                    <p class="card-text text-center">Create news mockups for social media or presentations.</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="redirect('news-mockup.html')">Check More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>AI Tools Showcase &copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
